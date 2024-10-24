@@ -1,5 +1,6 @@
-// counterType Class.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// counterType Class.cpp : This file provides the implementation details for the counterType class.
+// Member functions access and update the count member as they are called. Errors arise should the value
+// used to update the count member variable is negative.
 
 #include <iostream>
 #include "counterType.h"
@@ -44,7 +45,7 @@ void counterType::printCounter()
 
 counterType::counterType()
 {
-	count = 0;
+	resetCounter();
 }
 
 counterType::counterType(int num)

@@ -1,4 +1,6 @@
-
+//This test program demonstrates how an object created with the definition of a counterType class operates;
+//member functions are used to set, reset, and update counterType objects with different nonnegative integers;
+//Should the value provided to update the object be negative, appropriate errors will arise.
 
 #include <iostream>
 #include "counterType.h"
@@ -7,6 +9,7 @@ using namespace std;
 
 int main()
 {
+	//Initializes counterType objects, one default and one user-supplied
 	counterType myCounter;
 	counterType yourCounter(5);
 
